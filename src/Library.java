@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Comparator;
 import java.util.List;
 
@@ -6,7 +6,7 @@ public class Library {
     private List<Book> books;
 
     public Library() {
-        books = new ArrayList<>();
+        books = new LinkedList<>();
     }
 
     public void addBook(Book book) {
@@ -23,7 +23,7 @@ public class Library {
 
     public List<Book> searchBooksByTitle(String title) {
         title = title.toLowerCase();
-        List<Book> books = new ArrayList<>();
+        List<Book> books = new LinkedList<>();
         for (Book book : this.books) {
             if (book.getTitle().toLowerCase().contains(title))
                 books.add(book);
@@ -34,7 +34,7 @@ public class Library {
 
     public List<Book> searchBooksByAuthor(String author) {
         author = author.toLowerCase();
-        List<Book> books = new ArrayList<>();
+        List<Book> books = new LinkedList<>();
         for (Book book : this.books) {
             if (book.getAuthor().toLowerCase().contains(author))
                 books.add(book);
