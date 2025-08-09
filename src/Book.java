@@ -15,32 +15,36 @@ public class Book {
         return title;
     }
 
-    public void setTitle(String title) {
+    public Book setTitle(String title) {
         this.title = title;
+        return this;
     }
 
     public String getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
+    public Book setAuthor(String author) {
         this.author = author;
+        return this;
     }
 
     public int getReleaseDate() {
         return releaseDate;
     }
 
-    public void setReleaseDate(int releaseDate) {
+    public Book setReleaseDate(int releaseDate) {
         this.releaseDate = releaseDate;
+        return this;
     }
 
     public BookStatus getStatus() {
         return status;
     }
 
-    public void setStatus(BookStatus status) {
+    public Book setStatus(BookStatus status) {
         this.status = status;
+        return this;
     }
 
     @Override
